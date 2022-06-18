@@ -2,6 +2,8 @@
 -- Read Tables from database
 SELECT * FROM complete_table
 limit 10;
+SELECT * FROM cleaned_table
+limit 10;
 SELECT * FROM df_sample_table
 limit 10;
 SELECT * FROM ein_table
