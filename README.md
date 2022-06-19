@@ -6,5 +6,5 @@
 ### AnalyzeUp is motivated through the expectation of aiding the non-profit sector with our supplied tools in order to fundraise to resolve the world's greatest social issues. 
 
 ## Key Questions
-### What are the guidelines to creating a model that can rate unrated charities?
+### What are the guidelines to creating a model that can rate charities?
 ### How much financial support is given within each community (impact heatmap) and by cause?
