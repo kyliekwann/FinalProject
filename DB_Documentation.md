@@ -16,12 +16,13 @@ Amazon Web Services (AWS) is the largest cloud provider in the market. The Cloud
 
 ## 3. Connection among Postgres, AWS and Colab
     
-- Connect pgAdmin to RDS Instance 
+- Connect pgAdmin to RDS Instance
 
 ![Conn_AWS_postgres](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/Conn_AWS_postgres.png)
 
 
 - Test with Create and Read Tables
+
 ![createdTables_in_PySpark](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/createdTables_in_postgres.png)
 
 ![Test_CRUD](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/Test_CRUD.png)
