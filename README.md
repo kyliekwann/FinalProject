@@ -2,6 +2,7 @@
 
 
 **Background**    ![CN_88x31](https://user-images.githubusercontent.com/98571495/174534724-1acc7bc8-f034-4072-a655-94d02b63c042.gif)
+
 The AnalyzeUp team will present philanthropy propensity giving tools using published Annual Report Data and APIs from Charity Navigator(https://www.charitynavigator.org/) for the nonprofit sector.  Our main focus is to develop tools for corporate engagement within 
 nonprofit organizations and their contributions to supporting them. 
 
