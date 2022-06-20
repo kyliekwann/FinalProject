@@ -7,6 +7,7 @@ The AnalyzeUp team will present philanthropy propensity giving tools using publi
 nonprofit organizations and their contributions to supporting them. 
 
 **Mission**
+
 AnalyzeUp is motivated through the expectation of aiding the nonprofit sector with our supplied tools in order to fundraise to resolve the world's greatest social issues.
 
 **Key Questions**
