@@ -3,8 +3,7 @@
 
 **Background**  
 
-The AnalyzeUp team will present philanthropy propensity giving tools using published Annual Report Data and APIs from Charity Navigator(https://www.charitynavigator.org/) for the nonprofit sector. AnalyzeUp is a series of plugins that will allow an assortment of functionalities to determine missing data and beneficial sectors to the nonprofit community. Our main focus is to develop tools for corporate engagement within 
-nonprofit organizations and their contributions to supporting them. 
+The AnalyzeUp team will present philanthropy propensity giving tools using published Annual Report Data and APIs from Charity Navigator(https://www.charitynavigator.org/) for the nonprofit sector. AnalyzeUp is a series of plugins that will allow an assortment of functionalities to determine missing data and beneficial sectors to the nonprofit community. 
 
 **Mission**
 
