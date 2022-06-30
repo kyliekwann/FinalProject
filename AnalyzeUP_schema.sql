@@ -4,15 +4,36 @@ SELECT * FROM complete_table
 limit 10;
 SELECT * FROM cleaned_table
 limit 10;
-SELECT * FROM df_sample_table
+SELECT * FROM name_comp
 limit 10;
-SELECT * FROM ein_table
+SELECT * FROM expenses_comp
 limit 10;
+SELECT * FROM assets_comp
+limit 10;
+SELECT * FROM working_table
+limit 10;
+SELECT Count(*) From expenses_comp;
 
+
+--********************************************
+
+SELECT
+	n.id,
+	n.charity_name,
+	n.cause,
+	e.total_expenses,
+	ass.total_net_assets
+INTO working_table
+FROM name_comp AS n
+INNER JOIN expenses_comp AS e
+ON (n.id = e.id)
+INNER JOIN assets_comp AS ass
+ON (n.id=ass.id);
+	
 --*********************************************
 -- Delete Tables from database
 -- Careful!!!
-DROP TABLE IF EXISTS df_sample_table;
+DROP TABLE IF EXISTS working_table;
 
 --*********************************************
 -- Create Tables in database
