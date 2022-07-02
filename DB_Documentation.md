@@ -66,7 +66,7 @@ The comprehensive dataset has been stored in AWS S3 bucket and read into Colab a
 
 - Table from API
 The provided API is used to extract json data. Selected information from the json data is transformed into dataframe saving into the database.
-![API_Table.png](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/API_Table.png.png)
+![API_Table.png](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/API_Table.png)
 
 - Table "name_comp" for charity name and cause
 
