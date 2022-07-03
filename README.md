@@ -31,13 +31,20 @@ Hankai to fill in...
 - Data Cleaning, Transformation and Prepocessing
 Hankai to fill in...
 For preprossessing of the model the below measures were taken on the tables read in to jupyter notebook from the database:
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
+* As a best practice the datatypes, null values and possible duplicate entries were evaluated on the table data to ensure the data was cleaned. 
+![Preprocessing_checking_db_tables](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_checking_db_tables.png?raw=true)
+![Preprocessing_dropna.png](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_dropna.png?raw=true)
+![Preprocessing_nullvalues_duplicates](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_nullvalues_duplicates.png?raw=true)
+
+* Then the charity_name dataframe was created to be reindexed on the modeled dataframe. 
+![Preprocessing_charity_name_df](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_charity_name_df.png?raw=true)
+
+* Text features were converted to variables using get-dummies() and the data was scaled using StandardScaler().
+![Preprocessing_get_dummies](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_get_dummies.png?raw=true)
+![Preprocessing_standardize](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_standardize.png?raw=true)
+
+* Finally the data dimensions were reduced using PCA.
+![Preprocessing_PCA](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_PCA.png?raw=true)
 
 - Model Selection and Evaluation
 Aimee to fill in...
