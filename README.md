@@ -4,11 +4,11 @@
 
 **Background**  
 
-Charitable giving is propelled by personal decisions laden with emotions, noble ideals and important goals. Akin to tecnology, charitable giving has evolved from just writing and sending checks to the donor being more actively engaged with the causes they support and the efficacy of charitable entities who supply support to said causes.The AnalyzeUp team will present a non-profit efficacy giving tool using IRS 990 data donated from Charity Navigator (https://www.charitynavigator.org/) a research think-tank that collects data on charities based in the US through IRS 990 tax forms and self-reported data. Therefore, the data supplied to AnalyzeUp is more current then webscraping or other charitable data sources. 
+Charitable giving is propelled by personal decisions laden with emotions, noble ideals and important goals. Akin to tecnology, charitable giving has evolved from just writing and sending checks to the donor being more activly engaged with the causes they support and the efficacy of charitable entities who supply support to said causes.The AnalyzeUp team will present a non-profit efficacy giving tool using IRS 990 data donated from Charity Navigator (https://www.charitynavigator.org/) a research think-tank that collects data on charities based in the US through IRS 990 tax forms and self-reported data. Therefore, the data supplied to AnalyzeUp is more current then webscraping or other charitable data sources. 
 
 **Mission**
 
-AnalyzeUp is motivated through the expectation of helping not only philanthropic end-users align their areas of philanthropic interest with efficacy, but also help the nonprofit sector. It is our thought that philanthropy acts as an epoxy that helps fill the chasms of need when governmental funding programs fail to. Philanthropy, on every level, not only safeguards a society, but ensures a society’s ability to flourish. 
+AnalyzeUp is motivated through the expectation of helping not only philanthropic end-users align their areas of philanthropic interest with efficacy, but also help the nonprofit sector. It is our thoughts that philanthropy acts as an epoxy that helps fill the chasms of need when governmental funding programs fail to. Philanthropy, on every level, not only safeguards a society, but ensures a society’s ability to flourish. 
 
 
 **Key Questions**
@@ -47,10 +47,12 @@ For preprossessing of the model the below measures were taken on the tables read
 ![Preprocessing_PCA](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_PCA.png?raw=true)
 
 - Model Selection and Evaluation
-Aimee to fill in...
+ * After researching the best machine learning models available, the AnalyzeUp group decided to persue an Unsupervised model. After performing analysis using Kmeans clustering and Hierarchical clustering models, we decided that Kmeans was the ideal model as it not only produced a modeling accuracy of 90% but also because Kmeans modeling has usecases of customer segmentation and recommendation systems which aligns with the scope and goal of our project. 
+![Model_evaluation_elbow.png](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_elbow.png?raw=true)
+![Visualizing_prediction_results](https://github.com/kyliekwann/FinalProject/blob/main/Image/Visualizing_prediction_results.png?raw=true)
+![Model_evaluation_SC](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_SC.png?raw=true)
 
 - Model Saving and Loading
 Hankai to fill in...
+![Testing_model_and_saving](https://github.com/kyliekwann/FinalProject/blob/main/Image/Testing_model_and_saving.png?raw=true)
 
-- Visualizing Results in UI
-Aimee to fill in...
