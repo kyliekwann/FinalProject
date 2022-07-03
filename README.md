@@ -4,11 +4,11 @@
 
 **Background**  
 
-Charitable giving is propelled by personal decisions laden with emotions, noble ideals and important goals. Akin to tecnology, charitable giving has evolved from just writing and sending checks to the donor being more activly engaged with the causes they support and the efficacy of charitable entities who supply support to said causes.The AnalyzeUp team will present a non-profit efficacy giving tool using IRS 990 data donated from Charity Navigator (https://www.charitynavigator.org/) a research think-tank that collects data on charities based in the US through IRS 990 tax forms and self-reported data. Therefore, the data supplied to AnalyzeUp is more current then webscraping or other charitable data sources. 
+Charitable giving is propelled by personal decisions laden with emotions, noble ideals and important goals. Akin to tecnology, charitable giving has evolved from just writing and sending checks to the donor being more actively engaged with the causes they support and the efficacy of charitable entities who supply support to said causes.The AnalyzeUp team will present a non-profit efficacy giving tool using IRS 990 data donated from Charity Navigator (https://www.charitynavigator.org/) a research think-tank that collects data on charities based in the US through IRS 990 tax forms and self-reported data. Therefore, the data supplied to AnalyzeUp is more current then webscraping or other charitable data sources. 
 
 **Mission**
 
-AnalyzeUp is motivated through the expectation of helping not only philanthropic end-users align their areas of philanthropic interest with efficacy, but also help the nonprofit sector. It is our thoughts that philanthropy acts as an epoxy that helps fill the chasms of need when governmental funding programs fail to. Philanthropy, on every level, not only safeguards a society, but ensures a society’s ability to flourish. 
+AnalyzeUp is motivated through the expectation of helping not only philanthropic end-users align their areas of philanthropic interest with efficacy, but also help the nonprofit sector. It is our thought that philanthropy acts as an epoxy that helps fill the chasms of need when governmental funding programs fail to. Philanthropy, on every level, not only safeguards a society, but ensures a society’s ability to flourish. 
 
 
 **Key Questions**
