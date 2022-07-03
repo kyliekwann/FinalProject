@@ -15,7 +15,7 @@ AnalyzeUp is motivated through the expectation of helping not only philanthropic
 1) What requirements must be considered to create a model that can rate charities?
 2) How much financial support is given within each community (impact heatmap) and by cause?
 
-## Communication Protocal
+## Communication Protocol
 Refer to [AnalyzeUP Database Documentation](https://hankai26.github.io/AnalyzeUP_UI/).
 The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy.
 
@@ -57,5 +57,5 @@ For preprossessing of the model the below measures were taken on the tables read
 Hankai to fill in...
 ![Testing_model_and_saving](https://github.com/kyliekwann/FinalProject/blob/main/Image/Testing_model_and_saving.png?raw=true)
 
-PRESENTATION & DASHBOARD
+##PRESENTATION & DASHBOARD
 The presentation and dashboard can be found here: https://docs.google.com/presentation/d/1UN8B0lSqF8CpbT0Fve6pnVvGJYs7ztdWuVYFFk4ba84/edit#slide=id.g13a303464a2_0_0
