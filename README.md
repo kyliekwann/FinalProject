@@ -48,7 +48,7 @@ For preprossessing of the model the below measures were taken on the tables read
 ![Preprocessing_PCA](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_PCA.png?raw=true)
 
 - Model Selection and Evaluation
- * After researching the best machine learning models available, the AnalyzeUp group decided to persue an Unsupervised model. After performing analysis using Kmeans clustering and Hierarchical clustering models, we decided that Kmeans was the ideal model as it not only produced a modeling accuracy of 90% but also because Kmeans modeling has usecases of customer segmentation and recommendation systems which aligns with the scope and goal of our project. 
+After researching the best machine learning models available, the AnalyzeUp group decided to persue an Unsupervised model. After performing analysis using Kmeans clustering and Hierarchical clustering models, we decided that Kmeans was the ideal model as it not only produced a modeling accuracy of 90% but also because Kmeans modeling has usecases of customer segmentation and recommendation systems which aligns with the scope and goal of our project. 
 ![Model_evaluation_elbow.png](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_elbow.png?raw=true)
 ![Visualizing_prediction_results](https://github.com/kyliekwann/FinalProject/blob/main/Image/Visualizing_prediction_results.png?raw=true)
 ![Model_evaluation_SC](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_SC.png?raw=true)
