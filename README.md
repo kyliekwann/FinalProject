@@ -30,6 +30,7 @@ Hankai to fill in...
 
 - Data Cleaning, Transformation and Prepocessing
 Hankai to fill in...
+
 For preprossessing of the model the below measures were taken on the tables read in to jupyter notebook from the database:
 * As a best practice the datatypes, null values and possible duplicate entries were evaluated on the table data to ensure the data was cleaned. 
 ![Preprocessing_checking_db_tables](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_checking_db_tables.png?raw=true)
