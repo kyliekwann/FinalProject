@@ -14,7 +14,7 @@ install packages for libraries, e.g. PySpark. Here we also download the Postgres
 Amazon Web Services (AWS) is the largest cloud provider in the market. The Cloud services in free tier allows us to host the database for AnalyzeUP project. We work with a Postgres database and host it on AWS.
 
 
-## 3. Connection among Postgres, AWS and Colab
+## 3. Connection among Postgres, AWS, Colab and Jupyter Notebook
     
 - Connect pgAdmin to RDS Instance
 
@@ -27,6 +27,7 @@ Amazon Web Services (AWS) is the largest cloud provider in the market. The Cloud
 
 ![Test_CRUD](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/Test_CRUD.png)
 
+- SQLAlchemy is also used to connect to the database
 
 ## 4. Model Connection to the Database
 
@@ -52,3 +53,37 @@ The touble comes like how "bad" are the 943 rows of data? Are they really bad? W
 ![Read_csv_in_Pandas_3354](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/Read_csv_in_Pandas_3354.png)
 
 The trouble-shooting shows that Pandas may miss some data, which should be still useful, when applying "skiping function". Therefore, we need to compare the size of data read from different libraries with the original one prior to deciding the data cleaning method to keep as much data as possible.
+
+By here, the database is ready to talk to Colab and Jupyter Notebook.
+
+
+## 6. Read and Write Data to Database
+
+We have different data sources to extract the charity information to create specific tables in the database.
+- Table from comprehensive data
+The comprehensive dataset has been stored in AWS S3 bucket and read into Colab and Jupyter Notebook in PySpark, as well as Pandas.
+![Read_Comp_Table](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/Read_Comp_Table.png)
+
+- Table from API
+The provided API is used to extract json data. Selected information from the json data is transformed into dataframe saving into the database.
+![API_Table.png](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/API_Table.png)
+
+- Table "name_comp" for charity name and cause
+
+- Table "expenses_comp" for the total expenses of charities
+
+- Table "assets_comp" for the total assets of charities
+
+- Table "state_comp" for the location state of charities
+
+- Working table
+Using join operation in PostgreSQL, we created specific working table depending on analysis purposes, and saved into database. The subject working table is ready to read into file and to use for further analysis.
+
+## 7. Read into Jupyter Notebook
+After connecting to the database, Jupyter Notebook is used to read the working table and transformed the information into dataframe for modeling purpose.
+![working_table](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/working_table.png)
+
+
+
+
+
