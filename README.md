@@ -15,7 +15,7 @@ AnalyzeUp is motivated through the expectation of helping not only philanthropic
 1) What requirements must be considered to create a model that can rate charities?
 2) How much financial support is given within each community (impact heatmap) and by cause?
 
-## Communication Protocal
+## Communication Protocol
 Refer to [AnalyzeUP Database Documentation](https://hankai26.github.io/AnalyzeUP_UI/).
 The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy.
 
@@ -30,6 +30,7 @@ Hankai to fill in...
 
 - Data Cleaning, Transformation and Prepocessing
 Hankai to fill in...
+
 For preprossessing of the model the below measures were taken on the tables read in to jupyter notebook from the database:
 * As a best practice the datatypes, null values and possible duplicate entries were evaluated on the table data to ensure the data was cleaned. 
 ![Preprocessing_checking_db_tables](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_checking_db_tables.png?raw=true)
@@ -47,7 +48,7 @@ For preprossessing of the model the below measures were taken on the tables read
 ![Preprocessing_PCA](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_PCA.png?raw=true)
 
 - Model Selection and Evaluation
- * After researching the best machine learning models available, the AnalyzeUp group decided to persue an Unsupervised model. After performing analysis using Kmeans clustering and Hierarchical clustering models, we decided that Kmeans was the ideal model as it not only produced a modeling accuracy of 90% but also because Kmeans modeling has usecases of customer segmentation and recommendation systems which aligns with the scope and goal of our project. 
+After researching the best machine learning models available, the AnalyzeUp group decided to pursue an unsupervised model. After performing analysis using Kmeans clustering and Hierarchical clustering models, we decided that Kmeans was the ideal model as it not only produced a modeling accuracy of 90% but also because Kmeans modeling has use-cases of customer segmentation and recommendation systems which aligns with the scope and goal of our project. 
 ![Model_evaluation_elbow.png](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_elbow.png?raw=true)
 ![Visualizing_prediction_results](https://github.com/kyliekwann/FinalProject/blob/main/Image/Visualizing_prediction_results.png?raw=true)
 ![Model_evaluation_SC](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_SC.png?raw=true)
@@ -56,3 +57,7 @@ For preprossessing of the model the below measures were taken on the tables read
 Hankai to fill in...
 ![Testing_model_and_saving](https://github.com/kyliekwann/FinalProject/blob/main/Image/Testing_model_and_saving.png?raw=true)
 
+
+
+**PRESENTATION & DASHBOARD**
+The presentation and dashboard can be found here: https://docs.google.com/presentation/d/1UN8B0lSqF8CpbT0Fve6pnVvGJYs7ztdWuVYFFk4ba84/edit#slide=id.g13a303464a2_0_0
