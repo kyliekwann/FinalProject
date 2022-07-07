@@ -26,14 +26,23 @@ The original comprehensive dataset has been stored in AWS S3 bucket and read int
 ![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/Read_Comp_Table.png)
 Based on the given data and project goals, we stored the tables on the list below into database.
     1. Comprehensive table.
+
     2. API extracting data table.
+
     3. Table "name_comp" for charity name and cause.
+
     4. Table "expenses_comp" for the total expenses of charities.
+
     5. Table "assets_comp" for the total assets of charities.
+
     6. Table "state_comp" for the location state of charities.
+
     7. Working table Using join operation in PostgreSQL, which is ready for reading and analysis in the following modeling process as in the figure below.
 ![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/working_table.png)  
+
     6. Table "info_comp" for other background information of charities, which is ready for UI content.
+
+
 
 
 ### - Creating Entity Relationship (ER) Diagram to illustrates how “entities”, objects or concepts relate to each other factor within the data.
@@ -41,10 +50,12 @@ The ERD is created to show the data which's coming into the model.
 ![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/DB_ERD.png)
 
 
+
+
 ### - Data Cleaning, Transformation and Prepocessing
 Trouble-shooting is applied in examining original dataset to extract data using different libraries to compare the reading data size (as in Database documentation Section 5). Proper data cleaning and formatting are both needed to prepare tables for modeling purpose. One example is the Table "expenses_comp". Similar transformation is also necessary to prepre other tables.
-![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/data_formatting1.png)
-![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/data_formatting2.png)
+![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/data_formatting1.png)
+![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/data_formatting2.png)
 
 For preprossessing of the model the below measures were taken on the tables read in to jupyter notebook from the database:
 * As a best practice the datatypes, null values and possible duplicate entries were evaluated on the table data to ensure the data was cleaned. 
@@ -63,11 +74,16 @@ For preprossessing of the model the below measures were taken on the tables read
 ![Preprocessing_PCA](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_PCA.png?raw=true)
 
 
+
+
 ### - Model Selection and Evaluation
 After researching the best machine learning models available, the AnalyzeUp group decided to pursue an unsupervised model. After performing analysis using Kmeans clustering and Hierarchical clustering models, we decided that Kmeans was the ideal model as it not only produced a modeling accuracy of 90% but also because Kmeans modeling has use-cases of customer segmentation and recommendation systems which aligns with the scope and goal of our project. 
 ![Model_evaluation_elbow.png](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_elbow.png?raw=true)
 ![Visualizing_prediction_results](https://github.com/kyliekwann/FinalProject/blob/main/Image/Visualizing_prediction_results.png?raw=true)
 ![Model_evaluation_SC](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_SC.png?raw=true)
+
+
+
 
 ### - Model Saving and Loading
 We use the pickle operation to serialize our machine learning algorithms and save the serialized format to a file. We're then ready to load this file when necessary to deserialize the model and use it to make new predictions.
