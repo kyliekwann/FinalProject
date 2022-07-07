@@ -25,6 +25,7 @@ The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as J
 The original comprehensive dataset has been stored in AWS S3 bucket and read into Colab and Jupyter Notebook in PySpark, as well as Pandas (as in Database documentation Section 6). 
 ![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/Read_Comp_Table.png)
 Based on the given data and project goals, we stored the tables on the list below into database.
+    
     1. Comprehensive table.
 
     2. API extracting data table.
@@ -37,10 +38,10 @@ Based on the given data and project goals, we stored the tables on the list belo
 
     6. Table "state_comp" for the location state of charities.
 
-    7. Working table Using join operation in PostgreSQL, which is ready for reading and analysis in the following modeling process as in the figure below.
+    7. Table "info_comp" for other background information of charities, which is ready for UI content.
+    
+    8. Working table Using join operation in PostgreSQL, which is ready for reading and analysis in the following modeling process as in the figure below.
 ![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/working_table.png)  
-
-    6. Table "info_comp" for other background information of charities, which is ready for UI content.
 
 
 
@@ -53,9 +54,11 @@ The ERD is created to show the data which's coming into the model.
 
 
 ### - Data Cleaning, Transformation and Prepocessing
-Trouble-shooting is applied in examining original dataset to extract data using different libraries to compare the reading data size (as in Database documentation Section 5). Proper data cleaning and formatting are both needed to prepare tables for modeling purpose. One example is the Table "expenses_comp". Similar transformation is also necessary to prepre other tables.
+Trouble-shooting is applied in examining original dataset to extract data using different libraries to compare the reading data size (as in Database documentation Section 5). Proper data cleaning and formatting are both needed to prepare tables for modeling purpose. One example is the Table "expenses_comp". Similar transformations are also necessary to prepre other tables.
+
 ![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/data_formatting1.png)
 ![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/data_formatting2.png)
+
 
 For preprossessing of the model the below measures were taken on the tables read in to jupyter notebook from the database:
 * As a best practice the datatypes, null values and possible duplicate entries were evaluated on the table data to ensure the data was cleaned. 
@@ -87,7 +90,11 @@ After researching the best machine learning models available, the AnalyzeUp grou
 
 ### - Model Saving and Loading
 We use the pickle operation to serialize our machine learning algorithms and save the serialized format to a file. We're then ready to load this file when necessary to deserialize the model and use it to make new predictions.
+
+    1. Save the model   
 ![pickle_save](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/pickle_save.png?raw=true)
+
+    2. Load the model   
 ![pickle_save](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/pickle_load.png?raw=true)
 
 
