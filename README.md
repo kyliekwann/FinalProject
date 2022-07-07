@@ -46,9 +46,13 @@ Based on the given data and project goals, we stored the tables on the list belo
 
 
 
+
+
 ### - Creating Entity Relationship (ER) Diagram to illustrates how “entities”, objects or concepts relate to each other factor within the data.
 The ERD is created to show the data which's coming into the model.
 ![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/DB_ERD.png)
+
+
 
 
 
@@ -88,6 +92,8 @@ After researching the best machine learning models available, the AnalyzeUp grou
 
 
 
+
+
 ### - Model Saving and Loading
 We use the pickle operation to serialize our machine learning algorithms and save the serialized format to a file. We're then ready to load this file when necessary to deserialize the model and use it to make new predictions.
 
@@ -96,6 +102,8 @@ We use the pickle operation to serialize our machine learning algorithms and sav
 
     2. Load the model   
 ![pickle_save](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/pickle_load.png?raw=true)
+
+
 
 
 
