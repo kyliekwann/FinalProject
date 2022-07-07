@@ -1,0 +1,15 @@
+name_comp
+-
+id int pk
+charity_name varchar
+cause varchar
+
+expenses_comp
+-
+id int pk fk - name_comp.id
+total_expenses int
+
+assets_comp
+-
+id int pk fk - name_comp.id
+total_net_assets int
