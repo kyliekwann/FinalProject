@@ -15,10 +15,7 @@
  </head>
  <body class="bg-light">
    <div class="wrapper">
-     <!-- Navbar -->
-     <!--nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-       <a class="navbar-brand" href="index.html">UFO Sightings</a>
-     </nav-->
+    
      <!-- Jumbotron -->
      <div class="jumbotron">
        <h1 class="display-4"></h1>
@@ -28,7 +25,7 @@
      <div class="container-fluid">
        <div class="row">
          <div class="col-md-4 article-title">
-           <!--h1>About AnalyzeUp <small>Ufologists weigh in</small!--></h1>
+           <!--h1>About AnalyzeUp <small>Ufologists weigh in</small!></h1-->
          </div>
          <div class="col-md-8 article-p">
           <h1>About AnalyzeUp</h1>
@@ -61,7 +58,7 @@
                  </li>
                  <li class="list-group-item bg-light">
                    <label for="City">Enter a City</label>
-                   <input type="text" id="City" class="form-control" placeholder="City" />
+                   <input type="text" id="City" class="form-control"  placeholder="City"/>
                  </li>
                  <li class="list-group-item bg-light">
                    <label for="State">Enter a State</label>
@@ -75,10 +72,14 @@
                   <label for="Cause">Enter a Cause</label>
                   <input type="text" id="Cause" class="form-control" placeholder="Cause" />
                 </li>
+                <li class="list-group-item bg-light">
+                  <label for="Rating">Enter a Rating</label>
+                  <input type="text" id="Rating" class="form-control" placeholder="Rating" />
+                </li>
                </ul>
              </form>
            </div>
-         </div>
+          </div>
          <!-- Table -->
          <div class="col-md-9">
            <table class="table table-striped">
@@ -86,14 +87,15 @@
                <tr>
                  <th>OrgID</th>
                  <th>Charity Name</th>
+                 <th>Cause</th>
+                 <th>Category</th>
                  <th>Address</th>
                  <th>City</th>
                  <th>State</th>
                  <th>Zip</th>
                  <th>Website Address</th>
-                 <th>Cause</th>
-                 <th>Total Expenses (From Most Recent 990)</th>
-                 <th>Total Net Assets (From Most Recent 990) </th>
+                 <th>Total Expenses USD </th>
+                 <th>Total Net Assets USD</th>
                  <th>Rating</th>
                </tr>
              </thead>
@@ -114,7 +116,7 @@
               .tableau-center {
                 width:80px;
                 margin-right:80px;
-                margin-left: 700px;
+                margin-left: 80px;
               }
             </style> 
             <div class = "tableau-center">
@@ -136,5 +138,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
    <script src="static/js/data.js"></script>
    <script src="static/js/app.js"></script>
+
+
  </body>
 </html>
