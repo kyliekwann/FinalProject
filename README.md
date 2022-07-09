@@ -12,12 +12,15 @@ AnalyzeUp is motivated through the expectation of helping not only philanthropic
 
 
 **Key Questions**
-1) What requirements must be considered to create a model that can rate charities?
-2) How much financial support is given within each community (impact heatmap) and by cause?
+1) What financial features should be evaluated a US charity's support efficacy?
+2) How to classify a US charity's efficacy using  machine learning model?
+3) What is the appropriate classification machine learning model to utilize to classify a charity's efficacy? 
 
 ## Communication Protocol
 Refer to [AnalyzeUP Database Documentation](https://hankai26.github.io/AnalyzeUP_UI/).
 The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy.
+
+Colab connect file [].
 
 ## Project Outline
 
