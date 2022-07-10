@@ -52,7 +52,7 @@ Based on the given data and project goals, we stored the tables on the list belo
 
 
 ### - Creating Entity Relationship (ER) Diagram to illustrates how “entities”, objects or concepts relate to each other factor within the data.
-The ERD is created to show the data which's coming into the model.
+The ERD is created to show the data which is coming into the model.
 ![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/DB_ERD.png)
 
 
