@@ -1,109 +1,54 @@
-# [Click My Web](https://hankai26.github.io/AnalyzeUP_UI/)
-![image](https://user-images.githubusercontent.com/99574730/174512227-0ebd47b8-fe8b-48bd-9b78-500b7ed4847b.png)
+# AnalyzeUP K-means Model Documentation
 
+## Description of Preliminary Data Preprocessing
+Although preprocessing started when tables were created and cleaned in PgAdmin, further preprocessing need to be performed using pandas in jupyter notebook to ensure that the data from the tables being read into jupyter notebook not only had the correct datatypes for the machine learning model, but also that it was void of null values and possible duplicate entries:
+![Preprocessing_checking_db_tables](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_checking_db_tables.png?raw=true)
+![Preprocessing_dropna.png](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_dropna.png?raw=true)
+![Preprocessing_nullvalues_duplicates](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_nullvalues_duplicates.png?raw=true)
+Once it was determined that the table data datatypes were compatible with the K-means clustering model and was void from any null values or duplicate entries a charity_name dataframe was created to be reindexed on the modeled dataframe post-modeling: 
+![Preprocessing_charity_name_df](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_charity_name_df.png?raw=true)
+Additionally, text features in the ‘Cause’ column were converted to variables using get-dummies() and the data was scaled using StandardScaler().
+![Preprocessing_get_dummies](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_get_dummies.png?raw=true)
+![Preprocessing_standardize](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_standardize.png?raw=true)
 
-**Background**  
-
-Charitable giving is propelled by personal decisions laden with emotions, noble ideals and important goals. Akin to technology, charitable giving has evolved from just writing and sending checks to the donor being more actively engaged with the causes they support and the efficacy of charitable entities who supply support to said causes. The AnalyzeUp team will present a non-profit efficacy giving tool using IRS 990 data donated from Charity Navigator (https://www.charitynavigator.org/) a research think-tank that collects data on charities based in the US through IRS 990 tax forms and self-reported data. Therefore, the data supplied to AnalyzeUp is more current then web scraping or other charitable data sources. 
-
-**Mission**
-
-AnalyzeUp is motivated through the expectation of helping not only philanthropic end-users align their areas of philanthropic interest with efficacy, but also help the nonprofit sector. It is our thoughts that philanthropy acts as an epoxy that helps fill the chasms of need when governmental funding programs fail to. Philanthropy, on every level, not only safeguards a society, but ensures a society’s ability to flourish. 
-
-
-**Key Questions**
-1) What financial features should be evaluated a US charity's support efficacy?
-2) How to classify a US charity's efficacy using  machine learning model?
-3) What is the appropriate classification machine learning model to utilize to classify a charity's efficacy? 
-
-## Communication Protocol
-Refer to [AnalyzeUP Database Documentation](https://hankai26.github.io/AnalyzeUP_UI/).
-The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy.
-
-Colab connect file [].
-
-## Project Outline
-
-### - Data Extraction and Examination for Original Dataset.
-The original comprehensive dataset has been stored in AWS S3 bucket and read into Colab and Jupyter Notebook in PySpark, as well as Pandas (as in Database documentation Section 6). 
-![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/Read_Comp_Table.png)
-Based on the given data and project goals, we stored the tables on the list below into database.
-    
-    1. Comprehensive table.
-
-    2. API extracting data table.
-
-    3. Table "name_comp" for charity name and cause.
-
-    4. Table "expenses_comp" for the total expenses of charities.
-
-    5. Table "assets_comp" for the total assets of charities.
-
-    6. Table "state_comp" for the location state of charities.
-
-    7. Table "info_comp" for other background information of charities, which is ready for UI content.
-    
-    8. Working table Using join operation in PostgreSQL, which is ready for reading and analysis in the following modeling process as in the figure below.
-![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/working_table.png)  
-
-
-
-
-
-
-### - Creating Entity Relationship (ER) Diagram to illustrates how “entities”, objects or concepts relate to each other factor within the data.
-The ERD is created to show the data which is coming into the model.
-![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/DB_ERD.png)
-
-
-
-
-
-
-### - Data Cleaning, Transformation and Preprocessing
-Trouble-shooting is applied in examining original dataset to extract data using different libraries to compare the reading data size (as in Database documentation Section 5). Proper data cleaning and formatting are both needed to prepare tables for modeling purpose. One example is the Table "expenses_comp". Similar transformations are also necessary to prepare other tables.
-
-![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/data_formatting1.png)
-![image](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/data_formatting2.png)
-
-### - Model Selection and Evaluation
-After researching the best machine learning models available, the AnalyzeUp group decided to pursue an unsupervised model. After performing analysis using K-means clustering and Hierarchical clustering models, we decided that K-means was the ideal model as it not only produced a modeling accuracy of 90% but also because K-means modeling has use-cases of customer segmentation and recommendation systems which aligns with the scope and goal of our project. 
-
-* Four our model we chose the “working_table” from the database as it has the pertinent charity information and financial data to be modeled. ![Db_tables](https://github.com/kyliekwann/FinalProject/blob/main/Image/Db_tables.png?raw=true)
-
-* To reduce the dimension of our data we used Principal component analysis (PCA) into 3 principal components. 
+## Description of Preliminary Feature Engineering, Feature Selection and Decision Process.
+### Feature Engineering
+First the data dimensions were reduced using Principal Component Analysis (PCA). Then a dataframe was created with three principal components. This was performed to better visualize 3D patterns in the data.
 ![Preprocessing_PCA](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_PCA.png?raw=true)
+![Three_PC]( https://github.com/kyliekwann/FinalProject/blob/main/Image/Three_PC.png?raw=true)
 
-* Elbow curve shows the best value for k is k=4:
-![Elbow_Curve](https://github.com/kyliekwann/FinalProject/blob/main/Image/New%20Images/Elbow_Curve.png?raw=true)
+Next the best value for k was determined by using the Elbow Curve.
 
-* 3D visualization of clustered classes:
-![3D_Clusters](https://github.com/kyliekwann/FinalProject/blob/main/Image/New%20Images/3D_Clusters.png?raw=true)
+![Model_evaluation_elbow](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_elbow.png?raw=true)
 
-* Using Silhouette Coefficient to evaluate the accuracy of the K-means model.
-![Model_evaluation_SC_reaedme](https://github.com/kyliekwann/FinalProject/blob/main/Image/Model_evaluation_SC_reaedme.png?raw=true)
+After finding that k=4 the K-means model was initialized, fitted, saved for future use and the clusters were able to be predicted. Subsequently, a new clustered dataframe was created to include the clusters and charity features. 
+![k4_and_class](https://github.com/kyliekwann/FinalProject/blob/main/Image/k4_and_class.png?raw=true)
+Finally, visualizations of the predicted results were plotted in 3D and 2D scatterplots to better evaluate the clustering.  
+![Visualizing_prediction_results](https://github.com/kyliekwann/FinalProject/blob/main/Image/Visualizing_prediction_results.png?raw=true)
+![rated_charities_and_class_df](https://github.com/kyliekwann/FinalProject/blob/main/Image/rated_charities_and_class_df.png?raw=true)
+![Scatter_plot_w_rated_charties](https://github.com/kyliekwann/FinalProject/blob/main/Image/Scatter_plot_w_rated_charties.png?raw=true)
 
+### Feature Selection
+The features that were selected for modeling are the data in the total_expenses and total_net_assets columns.
+![Preprocessing_get_dummies](https://github.com/kyliekwann/FinalProject/blob/main/Image/Preprocessing_get_dummies.png?raw=true)
 
+### Decision Process
+The decision to use total_expenses and total_net_assets as our model features was because they exemplify the indicators of a charity’s overall efficacy because of the following:
+* total_expenses reflects the total functional expenses, computed as the sum of program expenses, administrative expenses and fundraising expenses, as reported on the income statement (IRS 990) 
+* total_net_assets are the difference between assets and liabilities, as reported on the organization's financial statement (IRS 990) Although charities do not exist to make money, they do work to build and maintain reasonable reserves of net assets. Growing its net assets helps a charity outpace inflation and sustain future program activities
 
+## Description of How the Data was Split into Training and Testing Sets
+Because we decided to use an unsupervised K-means machine learning model we did not split the data into training and testing sets as this is only commonly used in supervised learning. This is because, “most clustering algorithms cannot predict for new data… for any method that doesn't use centroids, it's not clear how you would apply this to test data”( https://stats.stackexchange.com/q/353196).
+However, we were able to train the data as can be seen below: 
+![k4_and_class](https://github.com/kyliekwann/FinalProject/blob/main/Image/k4_and_class.png?raw=true)
 
+## Explanation of Model Choice Including Limitations and Benefits
+After researching the best machine learning models available, the AnalyzeUP group decided to pursue an Unsupervised model. After performing analysis using Kmeans clustering and Hierarchical clustering models, we decided that Kmeans was the ideal model as it not only produced a modeling accuracy of 90% but also because Kmeans modeling has use-cases of customer segmentation and recommendation systems which aligns with the scope and goal of our project.
+### Model Limitations
+1. Requires the expected number of clusters before modeling 
+2. Tends to have troubles with varying cluster sizes and densities
 
-
-### - Model Saving and Loading
-We use the pickle operation to serialize our machine learning algorithms and save the serialized format to a file. We're then ready to load this file when necessary to deserialize the model and use it to make new predictions.
-
-    1. Save the model   
-![pickle_save](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/pickle_save.png?raw=true)
-
-    2. Load the model   
-![pickle_save](https://github.com/kyliekwann/FinalProject/blob/hankai26/Image/pickle_load.png?raw=true)
-
-
-
-
-
-
-**PRESENTATION & DASHBOARD**
-The presentation and dashboard can be found here: 
-* https://docs.google.com/presentation/d/1UN8B0lSqF8CpbT0Fve6pnVvGJYs7ztdWuVYFFk4ba84/edit#slide=id.g13a303464a2_0_0
-* https://docs.google.com/presentation/d/1UhdQw5l7eZLJNB4IM8grIsSR4T-ttT4bxXvSkt_9Oas/edit#slide=id.p
-
+### Model Benefits 
+1. Is scalable to large datasets 
+2. Is simple to interpret 
+3. Results in tight clusters
