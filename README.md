@@ -18,7 +18,7 @@ AnalyzeUp is motivated through the expectation of helping not only philanthropic
 
 ## Communication Protocol
 Refer to [AnalyzeUP Database Documentation](https://github.com/kyliekwann/FinalProject/blob/hankai26/DB_Documentation.md).
-The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy. The connection files are saved in Colad (https://github.com/kyliekwann/FinalProject/blob/hankai26/AnalyzeUP_connect_db.ipynb).
+The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy. The [connection files](https://github.com/kyliekwann/FinalProject/blob/hankai26/AnalyzeUP_connect_db.ipynb) are saved in Colab.
 
 
 ## Project Outline
