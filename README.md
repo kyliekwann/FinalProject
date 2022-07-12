@@ -17,10 +17,9 @@ AnalyzeUp is motivated through the expectation of helping not only philanthropic
 3) What is the appropriate classification machine learning model to utilize to classify a charity's efficacy? 
 
 ## Communication Protocol
-Refer to [AnalyzeUP Database Documentation](https://hankai26.github.io/AnalyzeUP_UI/).
-The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy.
+Refer to [AnalyzeUP Database Documentation](https://github.com/kyliekwann/FinalProject/blob/hankai26/DB_Documentation.md).
+The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy. The [connection files](https://github.com/kyliekwann/FinalProject/blob/hankai26/AnalyzeUP_connect_db.ipynb) are saved in Colab.
 
-Colab connect file [].
 
 ## Project Outline
 
