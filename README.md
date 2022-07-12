@@ -1,4 +1,4 @@
-# [Click My Web](https://hankai26.github.io/AnalyzeUP_UI/)
+# [Click for Dashboard](https://hankai26.github.io/AnalyzeUP_UI/)
 ![image](https://user-images.githubusercontent.com/99574730/174512227-0ebd47b8-fe8b-48bd-9b78-500b7ed4847b.png)
 
 
