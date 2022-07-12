@@ -96,8 +96,8 @@ We use the pickle operation to serialize our machine learning algorithms and sav
 
 
 
-**PRESENTATION & DASHBOARD**
-The presentation and dashboard can be found here: 
+**PRESENTATION**
+The presentation can be found here: 
 * https://docs.google.com/presentation/d/1UN8B0lSqF8CpbT0Fve6pnVvGJYs7ztdWuVYFFk4ba84/edit#slide=id.g13a303464a2_0_0
 * https://docs.google.com/presentation/d/1UhdQw5l7eZLJNB4IM8grIsSR4T-ttT4bxXvSkt_9Oas/edit#slide=id.p
 
