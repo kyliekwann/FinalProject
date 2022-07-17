@@ -1,4 +1,4 @@
-# [Click My Web](https://hankai26.github.io/AnalyzeUP_UI/)
+# [Click for Dashboard](https://hankai26.github.io/AnalyzeUP_UI/)
 ![image](https://user-images.githubusercontent.com/99574730/174512227-0ebd47b8-fe8b-48bd-9b78-500b7ed4847b.png)
 
 
@@ -16,13 +16,13 @@ AnalyzeUp is motivated through the expectation of helping not only philanthropic
 2) How to classify a US charity's efficacy using  machine learning model?
 3) What is the appropriate classification machine learning model to utilize to classify a charity's efficacy? 
 
-## Communication Protocol
-Refer to [AnalyzeUP Database Documentation](https://hankai26.github.io/AnalyzeUP_UI/).
-The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy.
 
-Colab connect file [].
 
 ## Project Outline
+
+Refer to [AnalyzeUP Database Documentation](https://github.com/kyliekwann/FinalProject/blob/hankai26/DB_Documentation.md).
+The AnalyzeUP database in PostgreSQL is connected to AWS and colab, as well as Jupyter Notebook using PySpark and SQLAlchemy. The [connection files](https://github.com/kyliekwann/FinalProject/blob/hankai26/AnalyzeUP_connect_db.ipynb) are saved in Colab.
+
 
 ### - Data Extraction and Examination for Original Dataset.
 The original comprehensive dataset has been stored in AWS S3 bucket and read into Colab and Jupyter Notebook in PySpark, as well as Pandas (as in Database documentation Section 6). 
@@ -97,8 +97,8 @@ We use the pickle operation to serialize our machine learning algorithms and sav
 
 
 
-**PRESENTATION & DASHBOARD**
-The presentation and dashboard can be found here: 
+**PRESENTATION**
+The presentation can be found here: 
 * https://docs.google.com/presentation/d/1UN8B0lSqF8CpbT0Fve6pnVvGJYs7ztdWuVYFFk4ba84/edit#slide=id.g13a303464a2_0_0
 * https://docs.google.com/presentation/d/1UhdQw5l7eZLJNB4IM8grIsSR4T-ttT4bxXvSkt_9Oas/edit#slide=id.p
 
