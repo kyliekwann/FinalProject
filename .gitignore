@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+AnalyzeUP_connect_db.ipynb
 
 # C extensions
 *.so
